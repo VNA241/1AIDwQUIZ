@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  background: linear-gradient(140deg, #67bce5 0%, rgb(190, 253, 255) 49%, rgb(230, 251, 255) 100%);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(140deg, #67bce5 0%, rgb(190, 253, 255) 49%, rgb(230, 251, 255) 100%);
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ccfcff;
+  padding: 20px;
+  flex: 1;
+  margin: 20px 10px;
+  border: 2px solid #fd7200;
+  border-radius: 8px;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+#med p {
+  padding-bottom: 40px;
+}
+
+.card ul{
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 2;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+h2, h3 {
+  color: #fd5000;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 12px;
+}
+
+.cuidados-box {
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-size: 120%;
+  background-position: center;
+}
+
+.cuidados-box h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cuidados-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo-info {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ff9800;
+  background-color: #f9f9f9;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  line-height: 30px;
+  max-width: 100%;
+  font-size: 20px;
+}
+
+.conteudo-info ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.conteudo-info ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 9;
+}
+
+.conteudo-info li {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-left: 30px; 
+  line-height: 2;
+}
+
+.conteudo-info ol, .conteudo-info li {
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.conteudo-info.show {
+  max-height: none;
+  opacity: 1;
+}
+
+main.container {
+  margin-bottom: 40px;
+}
+
+.details {
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+}
+
+.right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-item {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.carousel-item .right {
+  margin-top: 20px;
+}
+
+button + button {
+  margin-top: 5px;
+}
+
+.clickable-box {
+  display: inline-block;
+  padding: 15px;
+  background-color: #ff9800; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none; 
+  transition: background-color 0.3s ease;
+}
+
+.clickable-box:hover {
+  background-color: #e08700; 
+}
+
+.clickable-box1 {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  width: 45%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.clickable-box1 a {
+  color: white; 
+  text-decoration: none;
+}
+
+.clickable-box1:hover {
+  background-color: #0056b3;
+}
+
+.funnel-display-uniquifier {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.details .right img {
+  max-width: 60%;
+  height: auto;
+}
+
+
+#desmaio-info img {
+  width: 854px;
+  height: 480px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+#more-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#more-info .texto {
+  flex: 3;
+  font-size: 25px;
+}
+
+#more-info .illu {
+  flex: 1;
+}
+
+#more-info .illu img {
+  width: 150px;
+  height: auto;
+}
+
+#hit-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#hit-sign .hit,
+#hit-sign .sign {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  padding: 10px; 
+}
+
+#hit-sign .hit img,
+#hit-sign .sign img {
+  max-width: 100%;
+  height: auto;
+}
+
+#hit-sign .sign {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#hit-sign .sign h2 {
+  margin-bottom: 10px;
+}
+
+#hit-sign .sign p {
+  margin: 0;
+}
+
+#hit-sign .sign ul {
+  margin: 0;
+  padding: 0;
+}
+
+#hit-sign .sign img {
+  width: 200px;
+  height: auto;
+}
+
+#hemorragia-ext .types {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+#hemorragia-ext .types div {
+  flex: 1;
+  text-align: center; 
+}
+
+#hemorragia-ext .types img {
+  width: 220px;
+  height: auto;
+}
+
+#hemorragia-ext .types ul {
+  list-style: none;
+  padding: 0;
+}
+
+#hemorragia-ext .types li {
+  margin-bottom: 10px;
+}
+
+.types {
+    padding: 20px;
+    padding-bottom: 10px;
+    overflow: visible;
+}
+
+.types div {
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.types div ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.types div img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.hemo-heal {
+  display: flex;
+}
+
+.quizurembed {
+  border: 4px solid #000000; 
+  padding-left: 10px;
+  padding-right: 10px;
+  max-height: 50%;
+}
+
+@media (max-width: 768px) {
+  #flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; 
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  #flex-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; 
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .cuidados-box h1 {
+    font-size: 2em; 
+  }
+}

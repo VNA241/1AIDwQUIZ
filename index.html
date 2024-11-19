@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEIROS SOCORROS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <section id="navbar">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="title">
+                <h1 class="funnel-display-uniquifier">MANUAL BÁSICO DE PRIMEIROS SOCORROS</h1>
+            </div>
+        </section>
+        
+    </header>
+
+    <main class="container">
+        <section id="flex-container">
+            <div class="card">
+                <h2>Avaliação da cena</h2>
+                <p>Consiste na primeira etapa básica na prestação dos primeiros socorros.</p>
+                <ul>
+                    <li><strong>Mantenha a calma</strong>;</li>
+                    <li><strong>Garanta a segurança</strong> do local;</li>
+                    <li><strong>Pedir socorro</strong> é essencial;</li>
+                    <li><strong>Controle a situação</strong>;</li>
+                    <li><strong>Verifique as vítimas</strong>;</li>
+                    <li><strong>Realize ações adequadas</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Telefones Úteis:</h2>
+                <h3>VENDA NOVA</h3>
+                <p><i class="fas fa-phone-alt"></i> <strong>Polícia Militar:</strong> (31) 2108-4816</p>
+                <p><strong>Hospital UPA:</strong> (31) 3277-8909</p>
+                <img width="220px" height="200px" src="img/cruz.png">
+                <a href="https://prefeitura.pbh.gov.br/saude/informacoes/atencao-a-saude/urgencia-e-emergencia/upa" target="_blank" class="clickable-box">
+                    Telefones/Endereços <br> Prontos-Socorros
+                </a>
+            </div>
+
+            <div id="med" class="card">
+                <h2>NOÇÕES BÁSICAS DE PRIMEIROS SOCORROS</h2>
+                <p>De acordo com o artigo 135 do Código Penal Brasileiro, <span class="highlight">não prestar
+                        socorro</span> a uma vítima pode ser considerado crime.</p>
+                <img src="img/kitmed.png">
+            </div>
+        </section>
+
+        <section id="cuidados">
+            <div class="cuidados-box" onclick="mostrarParada()" style="background-image: url('img/pc.jpg');">
+                <h1>Parada Cardiorespiratória (PCR)</h1>
+            </div>
+            <div id="parada-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarDesmaio()" style="background-image: url('img/desmaio.jpg');">
+                <h1>Desmaios</h1>
+            </div>
+            <div id="desmaio-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarCortes()" style="background-image: url('img/cortes.jpg');">
+                <h1>Cortes</h1>
+            </div>
+            <div id="cortes-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarQueimaduras()" style="background-image: url('img/queimaduras.jpg');">
+                <h1>Queimaduras</h1>
+            </div>
+            <div id="queimaduras-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarEngasgamento()" style="background-image: url('img/engasga.jpg');">
+                <h1>Engasgamento</h1>
+            </div>
+            <div id="engasgamento-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarHemorragia()" style="background-image: url('img/hemorrag.jpg');">
+                <h1>Hemorragia</h1>
+            </div>
+            <div id="hemorragia-info" class="conteudo-info"></div>
+
+            <div class="cuidados-box" onclick="mostrarConvulsao()" style="background-image: url('img/convul.jpg');">
+                <h1>Convulsão</h1>
+            </div>
+            <div id="convulsao-info" class="conteudo-info"></div>
+        </section>
+    </main>
+
+    <div class="quiz">
+        <script>(function(q,u,i,z,r){z=q.createElement(u),r=q.getElementsByTagName(u)[0];z.async=1;z.src=i;r.parentNode.insertBefore(z,r);})(document,'script','https://pt.quizur.com/js/embedder.js');</script><ins class="quizurembed" data-id="trivia/voce-sabe-como-funciona-os-primeiros-socorros-1nZIw" data-color="#8fb0ff" data-font-color="#000000" data-bypass-cover="1" data-request-email="0"></ins> <div style="text-align:center; margin-top:20px"><a href="https://pt.quizur.com" target="_blank" style="color:#ccc; text-decoration: none"></div> 
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Primeiros Socorros. Todos os direitos reservados.</p>
+    </footer>
+     
+
+    <script src="script.js"></script>
+</body>
+
+</html>
